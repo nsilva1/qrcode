@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import QRGenerator from "./component/QRGenerator";
+
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>QR CODE GENERATOR</h1>
+      <QRGenerator text="This is the year 2022" />
     </div>
   );
 }
